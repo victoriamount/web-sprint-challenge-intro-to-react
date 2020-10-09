@@ -50,7 +50,7 @@ const App = () => {
       <StyledCharacterSection>
         {
           characterArray.map(char => {
-            return <Character currentFriend={char} />
+            return <Character key={char.id} currentFriend={char} />
           })
         }
       </StyledCharacterSection>
