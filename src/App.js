@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import dummyData from './dummyData'
 import Character from './components/Character'
-import styled, { keyframes } from 'styled-components'
+import Dance from './components/Dance'
+import styled from 'styled-components'
 
 
 
@@ -54,6 +54,7 @@ const App = () => {
           })
         }
       </StyledCharacterSection>
+      <Dance />
     </div>
   );
 }
