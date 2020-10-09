@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+/* font-family: 'Gugi', cursive; */
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-image: url('./images/sw-bg.jpg');
+  font-family: 'Gugi', cursive;
+  background-image: url('https://wallpapercave.com/wp/wp1822747.jpg');
+  /* 'https://wallpapercave.com/wp/wp1822734.jpg' */
   background-size: cover;
+  background-repeat: no-repeat;
 }
+
+
