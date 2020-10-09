@@ -3,6 +3,20 @@ import axios from 'axios';
 import './App.css';
 import dummyData from './dummyData'
 import Character from './components/Character'
+import styled, { keyframes } from 'styled-components'
+
+
+
+const StyledCharacterSection = styled.div`
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+
+`
+
+
+
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -32,12 +46,14 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
-      {
-        characterArray.map(char => {
-          return <Character currentFriend={char} />
-        })
-      }
+      <h1 className="Header">Rick and Morty Characters</h1>
+      <StyledCharacterSection>
+        {
+          characterArray.map(char => {
+            return <Character currentFriend={char} />
+          })
+        }
+      </StyledCharacterSection>
     </div>
   );
 }
